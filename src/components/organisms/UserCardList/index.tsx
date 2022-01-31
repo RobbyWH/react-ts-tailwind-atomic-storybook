@@ -19,7 +19,11 @@ const UserCardList = ({
     {
       data.map((item: UserCardProps) => (
         <div className="mb-5">
-          <UserCard name={item.name} imageSrc={item.imageSrc} />
+          <UserCard
+            name={item.name}
+            imageSrc={item.imageSrc}
+            postedAt={item.postedAt}
+          />
         </div>
       ))
     }
